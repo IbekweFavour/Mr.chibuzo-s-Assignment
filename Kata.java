@@ -15,16 +15,22 @@ public static boolean isEven(int number){
 	return evenOrFalse;
 }
 
-public static boolean isPrime(int primeNUmber){
+public static boolean isPrime(int primeNumber){
 	boolean evenOrFalseNumber = false;
 		
+	if (primeNumber % 2 == 0){
+	return false;
+}
+	else if (primeNumber % 2 == 1){
+	return true;
+}
+	
 	if (primeNumber == 1){
-	evenOrFalseNumber = false;
+	return false;
 	}
 	else if (primeNumber == 2){
-	evenFalseNumber = true;
+	return true;
 	}
-	return evenOrFalseNumber;	
 
 }
 
