@@ -15,6 +15,8 @@ public static boolean isEven(int number){
 	return evenOrFalse;
 }
 
+
+
 public static boolean isPrime(int primeNumber){
 	boolean evenOrFalseNumber = false;
 		
@@ -25,22 +27,28 @@ public static boolean isPrime(int primeNumber){
 	return true;
 }
 	
-	if (primeNumber == 1){
+	else if (primeNumber == 1){
 	return false;
 	}
 	else if (primeNumber == 2){
 	return true;
 	}
-
+return true;
 }
+
+
 
 
 public static void main(String... args){
 	Scanner usersInput = new Scanner(System.in);
 
-	System.out.print("Enter a number: ");
+	System.out.println("Enter a number: ");
 	int input = usersInput.nextInt();
 	System.out.print(isEven(input));
+	
+	System.out.print("Enter a number: ");
+	int primeInput = usersInput.nextInt();
+	System.out.println(isPrime(primeInput));
 
 }
 
